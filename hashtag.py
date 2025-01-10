@@ -5,3 +5,8 @@ while i < w :
     output += "#"
     i += 1 
 print(output)
+
+
+#or simply :
+#
+#print("#" * w)
