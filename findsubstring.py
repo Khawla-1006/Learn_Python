@@ -21,3 +21,11 @@ while True :
     i = index + 1
     string = string[i :]
 
+# or simply
+
+index = 0 
+
+while index + 3 <= len(string) :
+    if string[index] == char :
+        print(string[index : index + 3])
+    index += 1
