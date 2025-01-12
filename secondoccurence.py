@@ -14,3 +14,5 @@ if len(occurrence_index) >= 2 and occurrence_index[1] != -1 :
     print("The second occurrence of the substring is at index ", occurrence_index[1]) 
 else : 
     print("The substring does not occur twice in the string.")
+
+    #YOU MUST BE PROUD OF THIS !! ITS YOUR OWN SOLUTION AFTER 8 HOURS STRAIGHT :)
