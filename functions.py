@@ -16,8 +16,16 @@ def print_many_times(text, times) :
         print(text)
         i+=1
 
+def hash_square(x) :
+    i = 0
+    while i < x :
+        print("#" * x)
+        i += 1
+
+
 
 if __name__ == "__main__" :
     # seven_brothers()
     # mean(3,4,5)
-    print_many_times("hi", 6)
+    # print_many_times("hi", 6)
+    hash_square(5)
