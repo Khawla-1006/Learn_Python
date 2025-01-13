@@ -10,6 +10,14 @@ def seven_brothers() :
 def mean(x, y, z) :
     print((x + y + z)/3)
 
+def print_many_times(text, times) :
+    i = 0 
+    while i < times :
+        print(text)
+        i+=1
+
+
 if __name__ == "__main__" :
     # seven_brothers()
-    mean(3,4,5)
+    # mean(3,4,5)
+    print_many_times("hi", 6)
