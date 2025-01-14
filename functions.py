@@ -58,17 +58,18 @@ def chessboarded(size):
 
 def squared(word, a) : 
     i = 0 
+    word = word * a * 100
     while i < a :
+        #word += word is no longer accepted coz word is modified 
         if i % 2 == 0 :
-            string = word
+            string = word[a*i : a*(i+1)]
         else : 
-            #reversed string
-            j = len(word) - 1
-            string = ""
-            while j > 0 :
-                string += word[j] 
-                j -= 1
-        print(string[0 : a])
+            #next from the end
+            string = word[a*i : a*(i+1)]
+        #cleaning memory
+        if len(word) > a * 1000 :
+            word = word[a * (i+1) : ]
+        print(string)
         i += 1
 
 
@@ -79,5 +80,5 @@ if __name__ == "__main__" :
     # hash_square(5)
     # chessboard(10)
     # chessboarded(3)
-    squared("khawla", 3)
+    squared("kha", 10)
 
